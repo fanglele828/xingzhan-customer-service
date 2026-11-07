@@ -107,12 +107,39 @@ python start.py
 
 ## 项目结构
 
-| 路径 | 职责 |
-| --- | --- |
-| [frontend/src](frontend/src) | 聊天界面、订单侧栏、商品卡与确认弹窗 |
-| [backend/main.py](backend/main.py) | FastAPI 入口、健康检查与业务接口 |
-| [backend/agent](backend/agent) | 会话上下文、工具绑定、LangGraph 售后入口 |
-| [backend/rag](backend/rag) | PDF 结构切分、Milvus 入库、混合检索 |
-| [backend/services](backend/services) | 商品筛选、订单归属、物流与售后规则 |
-| [data](data) | PDF 知识库、业务种子数据和评测快照 |
-| [ablation_rag.py](ablation_rag.py) | 四组检索配置的复现脚本 |
+```text
+.
+├── backend/
+│   ├── main.py                     # FastAPI 接口与健康检查
+│   ├── config.py                   # 模型、数据库与知识库配置
+│   ├── schemas.py                  # API 请求与响应结构
+│   ├── agent/
+│   │   ├── chat.py                 # 多轮上下文、工具调用与回复组织
+│   │   ├── factory.py              # 聊天模型与嵌入模型
+│   │   ├── tools.py                # 商品、政策、订单与售后工具
+│   │   └── after_sales_graph.py    # LangGraph 预审入口与待确认草稿
+│   ├── rag/
+│   │   ├── pdf_parse.py            # 标题层级切分与表格恢复
+│   │   ├── ingest.py               # Milvus 入库、双路召回与 RRF 融合
+│   │   └── retrieve.py             # 证据片段与来源元数据
+│   ├── services/
+│   │   ├── products.py            # 商品筛选与型号查询
+│   │   ├── orders.py              # 订单归属、物流与工单查询
+│   │   └── after_sales.py         # 资格判断与工单写入
+│   └── storage/
+│       └── sqlite.py              # SQLite 连接、查询与事务
+├── frontend/
+│   └── src/
+│       ├── App.jsx                # 聊天、订单侧栏、引用与确认弹窗
+│       └── api.js                 # 前端接口封装
+├── data/
+│   ├── business/                  # 商品、订单、物流与售后种子数据
+│   ├── knowledge/                 # PDF 手册与知识库清单
+│   ├── eval/                      # 评测样例与切分快照
+│   └── init_sqlite.py             # 初始化业务数据库
+├── docs/
+│   ├── ARCHITECTURE.md            # 模块职责、接口与售后时序
+│   └── media/                     # 多轮演示截图
+├── ablation_rag.py                 # 2×2 检索消融复现
+└── start.py                        # 本地启动入口
+```
