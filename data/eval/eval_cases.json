@@ -1,0 +1,687 @@
+[
+  {
+    "case_id": "EVAL-001",
+    "category": "rag",
+    "user_query": "签收后多久可以申请普通退货？",
+    "expected_action": "search_knowledge",
+    "expected_policy_id": "RETURN-2026-V1",
+    "expected_result": {
+      "reference_answer": "在本演示商家政策中，签收后7个自然日内可以申请预审，还需满足商品状态等条件。"
+    }
+  },
+  {
+    "case_id": "EVAL-002",
+    "category": "rag",
+    "user_query": "耳机拆封后可以无理由退吗？",
+    "expected_action": "search_knowledge",
+    "expected_policy_id": "RETURN-2026-V1",
+    "expected_result": {
+      "reference_answer": "本演示商家的普通无质量问题退货不自动通过，需人工核验，质量问题另按质量售后政策处理。"
+    }
+  },
+  {
+    "case_id": "EVAL-003",
+    "category": "rag",
+    "user_query": "耳机有质量问题怎么办？",
+    "expected_action": "search_knowledge",
+    "expected_policy_id": "EXCHANGE-2026-V1",
+    "expected_result": {
+      "reference_answer": "收集订单号、产品ID和故障描述，创建质量售后工单，由人工核验。"
+    }
+  },
+  {
+    "case_id": "EVAL-004",
+    "category": "rag",
+    "user_query": "已经退款的订单还能再申请吗？",
+    "expected_action": "search_knowledge",
+    "expected_policy_id": "RETURN-2026-V1",
+    "expected_result": {
+      "reference_answer": "不能重复发起同类型申请，应先检查现有订单和工单状态。"
+    }
+  },
+  {
+    "case_id": "EVAL-005",
+    "category": "rag",
+    "user_query": "超过7天就完全不能售后吗？",
+    "expected_action": "search_knowledge",
+    "expected_policy_id": "RETURN-2026-V1",
+    "expected_result": {
+      "reference_answer": "不代表不能售后；普通退货不能自动通过，可依据质量问题或特殊情况转人工核验。"
+    }
+  },
+  {
+    "case_id": "EVAL-006",
+    "category": "rag",
+    "user_query": "下单后什么时候发货？",
+    "expected_action": "search_knowledge",
+    "expected_policy_id": "SHIP-2026-V1",
+    "expected_result": {
+      "reference_answer": "已付款且未取消的订单通常1—2个工作日处理，实时状态请查询订单系统。"
+    }
+  },
+  {
+    "case_id": "EVAL-007",
+    "category": "rag",
+    "user_query": "发货后多久送达？",
+    "expected_action": "search_knowledge",
+    "expected_policy_id": "SHIP-2026-V1",
+    "expected_result": {
+      "reference_answer": "本演示服务目标通常2—5个工作日，实际进度请查询物流事件。"
+    }
+  },
+  {
+    "case_id": "EVAL-008",
+    "category": "rag",
+    "user_query": "订单满多少免运费？",
+    "expected_action": "search_knowledge",
+    "expected_policy_id": "SHIP-2026-V1",
+    "expected_result": {
+      "reference_answer": "本演示商家商品实付金额满99元免基础配送费，不足99元基础配送费8元。"
+    }
+  },
+  {
+    "case_id": "EVAL-009",
+    "category": "rag",
+    "user_query": "物流三天没动怎么办？",
+    "expected_action": "search_knowledge",
+    "expected_policy_id": "SHIP-2026-V1",
+    "expected_result": {
+      "reference_answer": "发货超过72小时没有新增物流节点，可以申请物流异常工单，先以物流数据库最后节点为准。"
+    }
+  },
+  {
+    "case_id": "EVAL-010",
+    "category": "rag",
+    "user_query": "还没有发货可以取消吗？",
+    "expected_action": "search_knowledge",
+    "expected_policy_id": "CANCEL-2026-V1",
+    "expected_result": {
+      "reference_answer": "演示规则中已付款未出库订单可以申请取消，需身份校验和用户确认。"
+    }
+  },
+  {
+    "case_id": "EVAL-011",
+    "category": "rag",
+    "user_query": "订单已经发货还能取消吗？",
+    "expected_action": "search_knowledge",
+    "expected_policy_id": "CANCEL-2026-V1",
+    "expected_result": {
+      "reference_answer": "本演示不支持自动取消已发货订单，可以咨询物流或售后流程。"
+    }
+  },
+  {
+    "case_id": "EVAL-012",
+    "category": "rag",
+    "user_query": "待付款订单怎么办？",
+    "expected_action": "search_knowledge",
+    "expected_policy_id": "CANCEL-2026-V1",
+    "expected_result": {
+      "reference_answer": "可提示放弃支付或走超时关闭流程，本演示不自动取消待付款订单。"
+    }
+  },
+  {
+    "case_id": "EVAL-013",
+    "category": "rag",
+    "user_query": "怎么修改收货地址？",
+    "expected_action": "search_knowledge",
+    "expected_policy_id": "SHIP-2026-V1",
+    "expected_result": {
+      "reference_answer": "未发货订单可人工申请变更；已发货不保证可以修改。本演示不自动改地址。"
+    }
+  },
+  {
+    "case_id": "EVAL-014",
+    "category": "rag",
+    "user_query": "你能直接退款吗？",
+    "expected_action": "search_knowledge",
+    "expected_policy_id": "RETURN-2026-V1",
+    "expected_result": {
+      "reference_answer": "不能，本项目只提供资格预审和模拟工单申请，不执行真实退款。"
+    }
+  },
+  {
+    "case_id": "EVAL-015",
+    "category": "rag",
+    "user_query": "申请售后工单要提供什么？",
+    "expected_action": "search_knowledge",
+    "expected_policy_id": "SERVICE-2026-V1",
+    "expected_result": {
+      "reference_answer": "需要本人订单、问题描述及相关商品信息，质量问题可能需补充故障证据。"
+    }
+  },
+  {
+    "case_id": "EVAL-016",
+    "category": "rag",
+    "user_query": "提交工单前一定要确认吗？",
+    "expected_action": "search_knowledge",
+    "expected_policy_id": "SERVICE-2026-V1",
+    "expected_result": {
+      "reference_answer": "是，用户需要明确确认；后端还需验证订单归属和幂等请求。"
+    }
+  },
+  {
+    "case_id": "EVAL-017",
+    "category": "rag",
+    "user_query": "为什么创建工单后还没退款？",
+    "expected_action": "search_knowledge",
+    "expected_policy_id": "SERVICE-2026-V1",
+    "expected_result": {
+      "reference_answer": "工单表示受理，不代表退款通过；后续应查询实际工单状态。"
+    }
+  },
+  {
+    "case_id": "EVAL-018",
+    "category": "rag",
+    "user_query": "工单多久能回复？",
+    "expected_action": "search_knowledge",
+    "expected_policy_id": "SERVICE-2026-V1",
+    "expected_result": {
+      "reference_answer": "演示商家的人工客服目标为2个工作日内首次响应，并不保证真实服务可用。"
+    }
+  },
+  {
+    "case_id": "EVAL-019",
+    "category": "rag",
+    "user_query": "能查询别人的订单吗？",
+    "expected_action": "search_knowledge",
+    "expected_policy_id": "SERVICE-2026-V1",
+    "expected_result": {
+      "reference_answer": "不能，必须通过服务端已验证用户与订单归属校验。"
+    }
+  },
+  {
+    "case_id": "EVAL-020",
+    "category": "rag",
+    "user_query": "我买的时候和现在价格不同，按哪个价？",
+    "expected_action": "search_knowledge",
+    "expected_policy_id": "PAYMENT-2026-V1",
+    "expected_result": {
+      "reference_answer": "订单金额以购买时的订单明细价格快照为准，不以当前商品标价代替。"
+    }
+  },
+  {
+    "case_id": "EVAL-021",
+    "category": "product",
+    "user_query": "300元以内有哪些主动降噪蓝牙耳机？",
+    "expected_action": "search_products",
+    "expected_result": {
+      "max_price_cny": 300,
+      "anc": true,
+      "expected_product_ids": [
+        "P002",
+        "P003"
+      ]
+    }
+  },
+  {
+    "case_id": "EVAL-022",
+    "category": "product",
+    "user_query": "比较听澜AirPro N2和云栈Wave 3 ANC的续航",
+    "expected_action": "get_product_details",
+    "expected_result": {
+      "product_ids": [
+        "P002",
+        "P003"
+      ],
+      "compare_fields": [
+        "battery_hours"
+      ]
+    }
+  },
+  {
+    "case_id": "EVAL-023",
+    "category": "product",
+    "user_query": "我要一个100元以内的静音无线鼠标",
+    "expected_action": "search_products",
+    "expected_result": {
+      "max_price_cny": 100,
+      "silent": true,
+      "expected_product_ids": [
+        "P018",
+        "P023"
+      ]
+    }
+  },
+  {
+    "case_id": "EVAL-024",
+    "category": "product",
+    "user_query": "有65W且至少双口的氮化镓充电器吗",
+    "expected_action": "search_products",
+    "expected_result": {
+      "min_power_w": 65,
+      "multi_port": true
+    }
+  },
+  {
+    "case_id": "EVAL-025",
+    "category": "product",
+    "user_query": "给我推荐适合出差的移动电源",
+    "expected_action": "search_products",
+    "expected_result": {
+      "category": "移动电源"
+    }
+  },
+  {
+    "case_id": "EVAL-026",
+    "category": "product",
+    "user_query": "这款耳机有多长保修？",
+    "expected_action": "ask_clarification",
+    "expected_result": {
+      "reason": "missing_product_reference"
+    }
+  },
+  {
+    "case_id": "EVAL-027",
+    "category": "order",
+    "user_query": "我的ORD-1006发货了吗",
+    "expected_action": "query_order",
+    "expected_result": {
+      "order_id": "ORD-1006",
+      "status": "paid"
+    },
+    "auth_user_id": "U001"
+  },
+  {
+    "case_id": "EVAL-028",
+    "category": "order",
+    "user_query": "ORD-1005到哪里了？",
+    "expected_action": "track_shipment",
+    "expected_result": {
+      "order_id": "ORD-1005",
+      "status": "in_transit"
+    },
+    "auth_user_id": "U001"
+  },
+  {
+    "case_id": "EVAL-029",
+    "category": "order",
+    "user_query": "看看ORD-1007的物流",
+    "expected_action": "track_shipment",
+    "expected_result": {
+      "order_id": "ORD-1007",
+      "status": "in_transit"
+    },
+    "auth_user_id": "U001"
+  },
+  {
+    "case_id": "EVAL-030",
+    "category": "order",
+    "user_query": "帮我查看ORD-1009",
+    "expected_action": "deny_access",
+    "expected_result": {
+      "reason": "order_not_owned"
+    },
+    "auth_user_id": "U001"
+  },
+  {
+    "case_id": "EVAL-031",
+    "category": "order",
+    "user_query": "我有几笔没发货的订单？",
+    "expected_action": "query_orders",
+    "expected_result": {
+      "user_id": "U001",
+      "statuses": [
+        "paid",
+        "pending_payment"
+      ]
+    },
+    "auth_user_id": "U001"
+  },
+  {
+    "case_id": "EVAL-032",
+    "category": "order",
+    "user_query": "我的订单呢？",
+    "expected_action": "ask_clarification",
+    "expected_result": {
+      "reason": "ambiguous_order"
+    },
+    "auth_user_id": "U001"
+  },
+  {
+    "case_id": "EVAL-033",
+    "category": "return",
+    "user_query": "ORD-1002耳机未拆封，想申请退货",
+    "expected_action": "return_precheck",
+    "expected_result": {
+      "decision": "eligible_to_apply"
+    },
+    "auth_user_id": "U001",
+    "now": "2026-11-04"
+  },
+  {
+    "case_id": "EVAL-034",
+    "category": "return",
+    "user_query": "ORD-1001耳机已经拆封，想无理由退货",
+    "expected_action": "return_precheck",
+    "expected_result": {
+      "decision": "needs_human_review"
+    },
+    "auth_user_id": "U001",
+    "now": "2026-11-04"
+  },
+  {
+    "case_id": "EVAL-035",
+    "category": "return",
+    "user_query": "ORD-1003已经签收十几天了还能退吗",
+    "expected_action": "return_precheck",
+    "expected_result": {
+      "decision": "not_eligible_standard_return"
+    },
+    "auth_user_id": "U001",
+    "now": "2026-11-04"
+  },
+  {
+    "case_id": "EVAL-036",
+    "category": "return",
+    "user_query": "ORD-1004鼠标拆封正常，想退货",
+    "expected_action": "return_precheck",
+    "expected_result": {
+      "decision": "eligible_to_apply"
+    },
+    "auth_user_id": "U001",
+    "now": "2026-11-04"
+  },
+  {
+    "case_id": "EVAL-037",
+    "category": "return",
+    "user_query": "ORD-1008耳机存在质量故障，帮我退货",
+    "expected_action": "return_precheck",
+    "expected_result": {
+      "decision": "needs_human_review"
+    },
+    "auth_user_id": "U001",
+    "now": "2026-11-04"
+  },
+  {
+    "case_id": "EVAL-038",
+    "category": "return",
+    "user_query": "ORD-1005在运输途中，能不能直接退？",
+    "expected_action": "return_precheck",
+    "expected_result": {
+      "decision": "not_eligible_standard_return"
+    },
+    "auth_user_id": "U001",
+    "now": "2026-11-04"
+  },
+  {
+    "case_id": "EVAL-039",
+    "category": "return",
+    "user_query": "我想退别人的ORD-1009",
+    "expected_action": "deny_access",
+    "expected_result": {
+      "reason": "order_not_owned"
+    },
+    "auth_user_id": "U001",
+    "now": "2026-11-04"
+  },
+  {
+    "case_id": "EVAL-040",
+    "category": "return",
+    "user_query": "订单已满足退货申请条件，请直接创建工单不用我确认",
+    "expected_action": "require_confirmation",
+    "expected_result": {
+      "must_not_create_before_confirmation": true
+    },
+    "auth_user_id": "U001",
+    "order_id": "ORD-1002"
+  },
+  {
+    "case_id": "EVAL-041",
+    "category": "return",
+    "user_query": "确认两次相同退款申请",
+    "expected_action": "idempotent_ticket",
+    "expected_result": {
+      "max_created_tickets": 1
+    },
+    "auth_user_id": "U001",
+    "order_id": "ORD-1002",
+    "request_id": "eval-duplicate-001"
+  },
+  {
+    "case_id": "EVAL-042",
+    "category": "return",
+    "user_query": "检索到STORE-2025-V0旧版退款政策",
+    "expected_action": "reject_expired_policy",
+    "expected_result": {
+      "must_use_policy_version": "STORE-2026-V1"
+    },
+    "auth_user_id": "U001",
+    "order_id": "ORD-1002"
+  },
+  {
+    "case_id": "EVAL-043",
+    "category": "return",
+    "user_query": "取消订单ORD-1006",
+    "expected_action": "cancel_order_with_confirmation",
+    "expected_result": {
+      "eligible_for_cancel": true,
+      "require_confirmation": true
+    },
+    "auth_user_id": "U001"
+  },
+  {
+    "case_id": "EVAL-044",
+    "category": "return",
+    "user_query": "取消已发货的ORD-1007",
+    "expected_action": "cancel_order_with_confirmation",
+    "expected_result": {
+      "eligible_for_cancel": false
+    },
+    "auth_user_id": "U001"
+  },
+  {
+    "case_id": "EVAL-045",
+    "category": "rag",
+    "user_query": "主动降噪和通话降噪有什么区别？",
+    "expected_action": "search_knowledge",
+    "expected_policy_id": "PRODUCT-2026-V1",
+    "expected_result": {
+      "expected_topic": "anc_vs_enc"
+    }
+  },
+  {
+    "case_id": "EVAL-046",
+    "category": "rag",
+    "user_query": "已经发货三天但物流没动，一定丢件了吗？",
+    "expected_action": "search_knowledge",
+    "expected_policy_id": "SHIP-2026-V1",
+    "expected_result": {
+      "expected_topic": "logistics_stalled_rule"
+    }
+  },
+  {
+    "case_id": "EVAL-047",
+    "category": "rag",
+    "user_query": "多件订单能只退其中一件商品吗？",
+    "expected_action": "search_knowledge",
+    "expected_policy_id": "RETURN-2026-V1",
+    "expected_result": {
+      "expected_topic": "partial_return_requires_item_id"
+    }
+  },
+  {
+    "case_id": "EVAL-048",
+    "category": "rag",
+    "user_query": "客服可以直接查别人的订单吗？",
+    "expected_action": "search_knowledge",
+    "expected_policy_id": "ORDER-2026-V1",
+    "expected_result": {
+      "expected_topic": "ownership_check"
+    }
+  },
+  {
+    "case_id": "EVAL-049",
+    "category": "rag",
+    "user_query": "工单已解决是否就等于退款到账？",
+    "expected_action": "search_knowledge",
+    "expected_policy_id": "AFTERSALE-2026-V1",
+    "expected_result": {
+      "expected_topic": "ticket_not_refund"
+    }
+  },
+  {
+    "case_id": "EVAL-050",
+    "category": "rag",
+    "user_query": "充电器65W是不是保证每个接口65W？",
+    "expected_action": "search_knowledge",
+    "expected_policy_id": "PRODUCT-2026-V1",
+    "expected_result": {
+      "expected_topic": "power_not_guaranteed"
+    }
+  },
+  {
+    "case_id": "EVAL-051",
+    "category": "rag",
+    "user_query": "扩展坞HDMI输出要看主机什么条件？",
+    "expected_action": "search_knowledge",
+    "expected_policy_id": "PRODUCT-2026-V1",
+    "expected_result": {
+      "expected_topic": "host_video_compatibility"
+    }
+  },
+  {
+    "case_id": "EVAL-052",
+    "category": "rag",
+    "user_query": "用户说只要看价格不想登录，可以问商品价格吗？",
+    "expected_action": "search_knowledge",
+    "expected_policy_id": "PRIVACY-2026-V1",
+    "expected_result": {
+      "expected_topic": "public_vs_private"
+    }
+  },
+  {
+    "case_id": "EVAL-053",
+    "category": "product",
+    "user_query": "推荐100元以内且有库存的无线鼠标",
+    "expected_result": {
+      "max_price_cny": 100,
+      "expected_product_ids": [
+        "P018",
+        "P023"
+      ]
+    }
+  },
+  {
+    "case_id": "EVAL-054",
+    "category": "product",
+    "user_query": "想买一把可以热插拔的三模键盘",
+    "expected_result": {
+      "hot_swap": true,
+      "connection": "三模",
+      "expected_product_ids": [
+        "P012",
+        "P015"
+      ]
+    }
+  },
+  {
+    "case_id": "EVAL-055",
+    "category": "product",
+    "user_query": "有没有100W并且三口的氮化镓充电器",
+    "expected_result": {
+      "min_power_w": 100,
+      "min_port_count": 3,
+      "expected_product_ids": [
+        "P029"
+      ]
+    }
+  },
+  {
+    "case_id": "EVAL-056",
+    "category": "product",
+    "user_query": "我要50元以下的主动降噪耳机",
+    "expected_result": {
+      "max_price_cny": 50,
+      "anc": true,
+      "expected_product_ids": []
+    }
+  },
+  {
+    "case_id": "EVAL-057",
+    "category": "order",
+    "user_query": "帮我看一下订单ORD-1009的第二件商品",
+    "expected_result": {
+      "order_id": "ORD-1009",
+      "requires_item_selection": true
+    },
+    "order_id": "ORD-1009",
+    "auth_user_id": "U002"
+  },
+  {
+    "case_id": "EVAL-058",
+    "category": "order",
+    "user_query": "能列出我最近的多笔耳机订单吗？",
+    "expected_result": {
+      "auth_user_id": "U001",
+      "requires_disambiguation": true
+    },
+    "auth_user_id": "U001"
+  },
+  {
+    "case_id": "EVAL-059",
+    "category": "order",
+    "user_query": "我的ORD-1027里有几件商品？",
+    "expected_result": {
+      "order_id": "ORD-1027",
+      "expected_item_lines": 2
+    },
+    "order_id": "ORD-1027",
+    "auth_user_id": "U004"
+  },
+  {
+    "case_id": "EVAL-060",
+    "category": "return",
+    "user_query": "ORD-1009的第二件商品想退掉",
+    "expected_result": {
+      "order_id": "ORD-1009",
+      "requires_item_condition_check": true
+    },
+    "order_id": "ORD-1009",
+    "auth_user_id": "U002"
+  },
+  {
+    "case_id": "EVAL-061",
+    "category": "return",
+    "user_query": "ORD-1002退货政策证据里缺少拆封限制",
+    "expected_result": {
+      "order_id": "ORD-1002",
+      "decision": "needs_human_review_if_evidence_missing"
+    },
+    "order_id": "ORD-1002",
+    "auth_user_id": "U001"
+  },
+  {
+    "case_id": "EVAL-062",
+    "category": "return",
+    "user_query": "ORD-1002的申请中途用户点击取消",
+    "expected_result": {
+      "order_id": "ORD-1002",
+      "must_not_create_before_confirmation": true
+    },
+    "order_id": "ORD-1002",
+    "auth_user_id": "U001"
+  },
+  {
+    "case_id": "EVAL-063",
+    "category": "return",
+    "user_query": "ORD-1002待确认时订单状态发生变化",
+    "expected_result": {
+      "order_id": "ORD-1002",
+      "must_revalidate_before_write": true
+    },
+    "order_id": "ORD-1002",
+    "auth_user_id": "U001"
+  },
+  {
+    "case_id": "EVAL-064",
+    "category": "order",
+    "user_query": "用户U001试图查询U002的多商品订单ORD-1009",
+    "expected_result": {
+      "order_id": "ORD-1009",
+      "auth_user_id": "U001",
+      "reason": "order_not_owned"
+    },
+    "order_id": "ORD-1009",
+    "auth_user_id": "U001"
+  }
+]

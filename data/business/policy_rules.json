@@ -1,0 +1,60 @@
+{
+  "store_name": "星栈数码（完全虚构的演示商家）",
+  "policy_version": "STORE-2026-V1",
+  "effective_date": "2026-01-01",
+  "timezone": "Asia/Shanghai",
+  "evaluation_as_of_date": "2026-11-04",
+  "return_policy": {
+    "document_id": "RETURN-2026-V1",
+    "window_days_from_delivery": 7,
+    "requires_status": "delivered",
+    "requires_item_condition": "normal",
+    "opened_categories_manual_review": [
+      "蓝牙耳机"
+    ],
+    "issue_types_manual_review": [
+      "defective",
+      "wrong_item",
+      "missing_item"
+    ],
+    "not_eligible_order_statuses": [
+      "pending_payment",
+      "paid",
+      "shipped",
+      "cancelled",
+      "refunded"
+    ]
+  },
+  "cancellation": {
+    "document_id": "CANCEL-2026-V1",
+    "eligible_statuses": [
+      "paid"
+    ],
+    "requires_confirmation": true
+  },
+  "shipping": {
+    "document_id": "SHIP-2026-V1",
+    "free_shipping_threshold_cny": 99,
+    "basic_shipping_cny": 8,
+    "stalled_hours_for_ticket": 72
+  },
+  "ticket": {
+    "requires_confirmation": true,
+    "requires_verified_order_owner": true,
+    "idempotency_key": "request_id",
+    "allowed_statuses": [
+      "open",
+      "in_review",
+      "resolved",
+      "rejected"
+    ],
+    "allowed_types": [
+      "return_request",
+      "quality_issue",
+      "shipping_issue",
+      "complaint",
+      "invoice_request"
+    ]
+  },
+  "note": "规则配置是演示商家的权威机器判定来源；政策Markdown与其共享同一版本。规则文件变更时必须同步更新文档并测试。"
+}

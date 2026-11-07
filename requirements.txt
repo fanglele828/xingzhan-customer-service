@@ -1,0 +1,15 @@
+# 后端依赖（使用已有的 langchain1.2 虚拟环境）
+# 安装：pip install -r requirements.txt
+langchain>=1.2.0
+langchain-core>=1.2.0
+langchain-community>=0.4.0
+langchain-openai>=1.1.0
+langgraph>=1.1.0
+langgraph-checkpoint-sqlite>=3.0.0
+fastapi>=0.110.0
+uvicorn>=0.27.0
+pydantic>=2.6.0
+pymupdf>=1.24.0
+pymilvus>=2.5.0
+python-dotenv>=1.0.0
+httpx>=0.27.0

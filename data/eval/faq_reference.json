@@ -1,0 +1,332 @@
+[
+  {
+    "faq_id": "Q01",
+    "question": "你们卖什么商品？",
+    "reference_answer": "演示商家经营耳机、键盘、鼠标、充电器、移动电源和扩展坞，具体价格与库存需查询商品数据库。",
+    "expected_policy_id": "STORE-2026-V1"
+  },
+  {
+    "faq_id": "Q02",
+    "question": "商品价格与库存以哪儿为准？",
+    "reference_answer": "以商品数据库当前记录为准，不使用静态知识文档中的旧价格。",
+    "expected_policy_id": "STORE-2026-V1"
+  },
+  {
+    "faq_id": "Q03",
+    "question": "300元以内有哪些降噪耳机？",
+    "reference_answer": "请先使用商品检索工具，按price_cny≤300和anc=true筛选实际在售且有库存的商品。",
+    "expected_policy_id": "STORE-2026-V1"
+  },
+  {
+    "faq_id": "Q04",
+    "question": "怎么比较两款耳机？",
+    "reference_answer": "根据具体产品ID比较主动降噪、续航、连接协议和适用场景，不能编造规格。",
+    "expected_policy_id": "STORE-2026-V1"
+  },
+  {
+    "faq_id": "Q05",
+    "question": "保修期从什么时候开始？",
+    "reference_answer": "按演示商家规则，从订单签收日期起算；具体保修月数以产品目录字段为准。",
+    "expected_policy_id": "WARRANTY-2026-V1"
+  },
+  {
+    "faq_id": "Q06",
+    "question": "没签收能申请退货吗？",
+    "reference_answer": "尚未签收的订单不进入普通退货预审，应先检查物流或取消条件。",
+    "expected_policy_id": "RETURN-2026-V1"
+  },
+  {
+    "faq_id": "Q07",
+    "question": "签收后多久可以申请普通退货？",
+    "reference_answer": "在本演示商家政策中，签收后7个自然日内可以申请预审，还需满足商品状态等条件。",
+    "expected_policy_id": "RETURN-2026-V1"
+  },
+  {
+    "faq_id": "Q08",
+    "question": "耳机拆封后可以无理由退吗？",
+    "reference_answer": "本演示商家的普通无质量问题退货不自动通过，需人工核验，质量问题另按质量售后政策处理。",
+    "expected_policy_id": "RETURN-2026-V1"
+  },
+  {
+    "faq_id": "Q09",
+    "question": "耳机有质量问题怎么办？",
+    "reference_answer": "收集订单号、产品ID和故障描述，创建质量售后工单，由人工核验。",
+    "expected_policy_id": "EXCHANGE-2026-V1"
+  },
+  {
+    "faq_id": "Q10",
+    "question": "错发商品怎么办？",
+    "reference_answer": "属于需人工核验的售后异常，系统可以创建相应质量/售后工单。",
+    "expected_policy_id": "EXCHANGE-2026-V1"
+  },
+  {
+    "faq_id": "Q11",
+    "question": "已经退款的订单还能再申请吗？",
+    "reference_answer": "不能重复发起同类型申请，应先检查现有订单和工单状态。",
+    "expected_policy_id": "RETURN-2026-V1"
+  },
+  {
+    "faq_id": "Q12",
+    "question": "超过7天就完全不能售后吗？",
+    "reference_answer": "不代表不能售后；普通退货不能自动通过，可依据质量问题或特殊情况转人工核验。",
+    "expected_policy_id": "RETURN-2026-V1"
+  },
+  {
+    "faq_id": "Q13",
+    "question": "下单后什么时候发货？",
+    "reference_answer": "已付款且未取消的订单通常1—2个工作日处理，实时状态请查询订单系统。",
+    "expected_policy_id": "SHIP-2026-V1"
+  },
+  {
+    "faq_id": "Q14",
+    "question": "发货后多久送达？",
+    "reference_answer": "本演示服务目标通常2—5个工作日，实际进度请查询物流事件。",
+    "expected_policy_id": "SHIP-2026-V1"
+  },
+  {
+    "faq_id": "Q15",
+    "question": "订单满多少免运费？",
+    "reference_answer": "本演示商家商品实付金额满99元免基础配送费，不足99元基础配送费8元。",
+    "expected_policy_id": "SHIP-2026-V1"
+  },
+  {
+    "faq_id": "Q16",
+    "question": "物流三天没动怎么办？",
+    "reference_answer": "已发货且最新物流事件距当前超过72小时仍未签收，可以申请物流异常工单，先以物流数据库最后节点为准。",
+    "expected_policy_id": "SHIP-2026-V1"
+  },
+  {
+    "faq_id": "Q17",
+    "question": "物流查询失败怎么办？",
+    "reference_answer": "客服应说明查询失败，不能编造物流位置，必要时创建人工工单。",
+    "expected_policy_id": "SHIP-2026-V1"
+  },
+  {
+    "faq_id": "Q18",
+    "question": "还没有发货可以取消吗？",
+    "reference_answer": "演示规则中已付款未出库订单可以申请取消，需身份校验和用户确认。",
+    "expected_policy_id": "CANCEL-2026-V1"
+  },
+  {
+    "faq_id": "Q19",
+    "question": "订单已经发货还能取消吗？",
+    "reference_answer": "本演示不支持自动取消已发货订单，可以咨询物流或售后流程。",
+    "expected_policy_id": "CANCEL-2026-V1"
+  },
+  {
+    "faq_id": "Q20",
+    "question": "待付款订单怎么办？",
+    "reference_answer": "可提示放弃支付或走超时关闭流程，本演示不自动取消待付款订单。",
+    "expected_policy_id": "CANCEL-2026-V1"
+  },
+  {
+    "faq_id": "Q21",
+    "question": "怎么修改收货地址？",
+    "reference_answer": "未发货订单可人工申请变更；已发货不保证可以修改。本演示不自动改地址。",
+    "expected_policy_id": "SHIP-2026-V1"
+  },
+  {
+    "faq_id": "Q22",
+    "question": "你能直接退款吗？",
+    "reference_answer": "不能，本项目只提供资格预审和模拟工单申请，不执行真实退款。",
+    "expected_policy_id": "RETURN-2026-V1"
+  },
+  {
+    "faq_id": "Q23",
+    "question": "申请售后工单要提供什么？",
+    "reference_answer": "需要本人订单、问题描述及相关商品信息，质量问题可能需补充故障证据。",
+    "expected_policy_id": "SERVICE-2026-V1"
+  },
+  {
+    "faq_id": "Q24",
+    "question": "提交工单前一定要确认吗？",
+    "reference_answer": "是，用户需要明确确认；后端还需验证订单归属和幂等请求。",
+    "expected_policy_id": "SERVICE-2026-V1"
+  },
+  {
+    "faq_id": "Q25",
+    "question": "为什么创建工单后还没退款？",
+    "reference_answer": "工单表示受理，不代表退款通过；后续应查询实际工单状态。",
+    "expected_policy_id": "SERVICE-2026-V1"
+  },
+  {
+    "faq_id": "Q26",
+    "question": "工单多久能回复？",
+    "reference_answer": "演示商家的人工客服目标为2个工作日内首次响应，并不保证真实服务可用。",
+    "expected_policy_id": "SERVICE-2026-V1"
+  },
+  {
+    "faq_id": "Q27",
+    "question": "我想转人工",
+    "reference_answer": "可以创建人工咨询工单，或展示演示中的人工接入状态。",
+    "expected_policy_id": "SERVICE-2026-V1"
+  },
+  {
+    "faq_id": "Q28",
+    "question": "能查询别人的订单吗？",
+    "reference_answer": "不能，必须通过服务端已验证用户与订单归属校验。",
+    "expected_policy_id": "SERVICE-2026-V1"
+  },
+  {
+    "faq_id": "Q29",
+    "question": "我买的时候和现在价格不同，按哪个价？",
+    "reference_answer": "订单金额以购买时的订单明细价格快照为准，不以当前商品标价代替。",
+    "expected_policy_id": "PAYMENT-2026-V1"
+  },
+  {
+    "faq_id": "Q30",
+    "question": "可以开发票吗？",
+    "reference_answer": "可以发起模拟发票咨询工单，但本项目不生成真实电子发票。",
+    "expected_policy_id": "PAYMENT-2026-V1"
+  },
+  {
+    "faq_id": "Q31",
+    "question": "我可以只退订单里的一件商品吗？",
+    "reference_answer": "可以先提交针对指定商品的售后咨询；若订单包含多件商品，需确认product_id及该件状态，不能默认整单退货。",
+    "expected_policy_id": "RETURN-2026-V1"
+  },
+  {
+    "faq_id": "Q32",
+    "question": "订单号可以直接用来证明我是买家吗？",
+    "reference_answer": "不能，订单查询和售后操作必须校验服务端登录用户与订单归属。",
+    "expected_policy_id": "ORDER-2026-V1"
+  },
+  {
+    "faq_id": "Q33",
+    "question": "我只有商品名，没有订单号，能查询订单吗？",
+    "reference_answer": "可先查询当前用户最近的订单并让其选择；多笔匹配时不能猜测具体订单。",
+    "expected_policy_id": "ORDER-2026-V1"
+  },
+  {
+    "faq_id": "Q34",
+    "question": "我已经支付但订单还显示待付款怎么办？",
+    "reference_answer": "演示系统不能查询真实支付流水，建议提交人工核验，不要再次尝试自动扣款。",
+    "expected_policy_id": "PAYMENT-2026-V1"
+  },
+  {
+    "faq_id": "Q35",
+    "question": "物流显示揽收就算已经送到吗？",
+    "reference_answer": "不算，揽收、运输、派送和签收是不同物流状态，应以最新物流事件为准。",
+    "expected_policy_id": "SHIP-2026-V1"
+  },
+  {
+    "faq_id": "Q36",
+    "question": "快递已派送但我没收到怎么办？",
+    "reference_answer": "先查询最新物流事件和签收记录，必要时创建物流异常或人工核验工单。",
+    "expected_policy_id": "SHIP-2026-V1"
+  },
+  {
+    "faq_id": "Q37",
+    "question": "同一订单包含两件商品，只收到一件怎么办？",
+    "reference_answer": "先核对订单商品明细和物流记录，本演示不保证每件有独立运单；缺件需人工售后核验。",
+    "expected_policy_id": "EXCHANGE-2026-V1"
+  },
+  {
+    "faq_id": "Q38",
+    "question": "发货后三天没有更新物流一定丢件了吗？",
+    "reference_answer": "不能这样认定。若最新物流事件超过72小时未更新且未签收，可创建物流异常工单。",
+    "expected_policy_id": "SHIP-2026-V1"
+  },
+  {
+    "faq_id": "Q39",
+    "question": "想取消订单，但刚才已经发货了怎么办？",
+    "reference_answer": "本演示取消规则只允许已付款未发货订单，已发货应咨询物流或后续售后方案。",
+    "expected_policy_id": "CANCEL-2026-V1"
+  },
+  {
+    "faq_id": "Q40",
+    "question": "我点了两次确认，会生成两个售后单吗？",
+    "reference_answer": "不会。服务端对同一个request_id应用唯一约束，重复确认应返回原工单。",
+    "expected_policy_id": "AFTERSALE-2026-V1"
+  },
+  {
+    "faq_id": "Q41",
+    "question": "我不确认退货申请，会自动生成工单吗？",
+    "reference_answer": "不会。用户尚未明确确认前，业务数据库不得创建工单。",
+    "expected_policy_id": "AFTERSALE-2026-V1"
+  },
+  {
+    "faq_id": "Q42",
+    "question": "普通退货超时还可以报修吗？",
+    "reference_answer": "普通退货自动预审期限不等于全部售后权利，质量问题和保修咨询按相应政策处理。",
+    "expected_policy_id": "WARRANTY-2026-V1"
+  },
+  {
+    "faq_id": "Q43",
+    "question": "质量问题是否必须提供视频？",
+    "reference_answer": "故障描述是必要信息；图片或视频为可选补充材料，不应因一时无法提供就自动拒绝权益请求。",
+    "expected_policy_id": "EXCHANGE-2026-V1"
+  },
+  {
+    "faq_id": "Q44",
+    "question": "想知道这款键盘是不是热插拔",
+    "reference_answer": "必须先确定具体商品ID，并查询`specs_json.hot_swap`，不能按键盘品类一概而论。",
+    "expected_policy_id": "PRODUCT-2026-V1"
+  },
+  {
+    "faq_id": "Q45",
+    "question": "通话降噪和主动降噪是一回事吗？",
+    "reference_answer": "不是，通话降噪改善拾音，主动降噪降低佩戴者感受到的环境噪声；筛选ANC需看商品字段。",
+    "expected_policy_id": "PRODUCT-2026-V1"
+  },
+  {
+    "faq_id": "Q46",
+    "question": "65W充电器一定能给我的电脑65W吗？",
+    "reference_answer": "不一定，实际功率受设备协议、接口、线材和多口分配影响，需要核验兼容参数。",
+    "expected_policy_id": "PRODUCT-2026-V1"
+  },
+  {
+    "faq_id": "Q47",
+    "question": "USB-C扩展坞插上就一定能输出视频吗？",
+    "reference_answer": "不一定，主机USB-C接口须支持相应视频输出模式，线材和屏幕条件也会影响结果。",
+    "expected_policy_id": "PRODUCT-2026-V1"
+  },
+  {
+    "faq_id": "Q48",
+    "question": "推荐时是否优先选择有库存的商品？",
+    "reference_answer": "是，必须通过商品查询接口筛选在售且库存大于0的商品，并满足用户硬条件。",
+    "expected_policy_id": "PRODUCT-2026-V1"
+  },
+  {
+    "faq_id": "Q49",
+    "question": "没有符合预算的商品怎么办？",
+    "reference_answer": "明确说明当前无匹配商品，并询问是否愿意放宽预算或其他条件，不可虚构商品。",
+    "expected_policy_id": "PRODUCT-2026-V1"
+  },
+  {
+    "faq_id": "Q50",
+    "question": "你能修改我的收货地址吗？",
+    "reference_answer": "当前不支持自动修改。未发货可登记人工申请，已发货不能保证修改成功。",
+    "expected_policy_id": "SHIP-2026-V1"
+  },
+  {
+    "faq_id": "Q51",
+    "question": "我能让你给别人的订单申请退款吗？",
+    "reference_answer": "不能，订单查询和工单创建需要服务端用户归属校验，未经授权应拒绝。",
+    "expected_policy_id": "PRIVACY-2026-V1"
+  },
+  {
+    "faq_id": "Q52",
+    "question": "订单取消后能马上收到退款吗？",
+    "reference_answer": "本Demo仅模拟取消状态，不能进行或承诺真实退款到账。",
+    "expected_policy_id": "CANCEL-2026-V1"
+  },
+  {
+    "faq_id": "Q53",
+    "question": "客服说已创建工单就代表退货成功了吗？",
+    "reference_answer": "不代表，只说明申请已登记，后续仍需人工核验及商品处理。",
+    "expected_policy_id": "AFTERSALE-2026-V1"
+  },
+  {
+    "faq_id": "Q54",
+    "question": "怎么查询我的售后工单进度？",
+    "reference_answer": "提供本人的工单编号，经服务端校验归属后读取工单数据库当前状态。",
+    "expected_policy_id": "SERVICE-2026-V1"
+  },
+  {
+    "faq_id": "Q55",
+    "question": "为什么你不回答订单里的私人信息？",
+    "reference_answer": "个人订单属于受保护业务数据，必须先通过服务端身份与订单归属校验。",
+    "expected_policy_id": "PRIVACY-2026-V1"
+  }
+]

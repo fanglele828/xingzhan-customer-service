@@ -1,0 +1,195 @@
+{
+  "dataset": "星栈数码电商多模态PDF知识库",
+  "version": "STORE-2026-V1",
+  "effective_date": "2026-01-01",
+  "fixture_as_of_date": "2026-11-04",
+  "generated_at": "2026-11-05",
+  "source_type": "original_synthetic_store_documents",
+  "source_rules": "business/policy_rules.json",
+  "usage_notice": "全部为原创虚构业务资料，版式模仿真实电商规范；请勿标注为任何真实企业官方文件。",
+  "documents": [
+    {
+      "doc_id": "KB-STORE-001",
+      "title": "01_客户服务与购物政策总册",
+      "pdf_path": "knowledge/raw_pdfs/01_客户服务与购物政策总册.pdf",
+      "document_type": "policy",
+      "visibility": "public",
+      "policy_version": "STORE-2026-V1",
+      "reference_policies": [
+        "STORE-2026-V1",
+        "PRODUCT-2026-V1",
+        "ORDER-2026-V1",
+        "PAYMENT-2026-V1",
+        "PRIVACY-2026-V1"
+      ],
+      "ingest": true,
+      "embedding_policy": "page/section-aware with image/table provenance",
+      "source_lang": "zh-CN",
+      "pages": 6,
+      "pdf_size_bytes": 512648,
+      "sha256": "28d2c42926680ccc499a9f58c04e9a2acc8cda2b93e11e33a5eba064d090462e",
+      "pdf_image_occurrences": 12,
+      "text_extractable": true,
+      "allowed_audiences": [
+        "customer",
+        "staff"
+      ]
+    },
+    {
+      "doc_id": "KB-CATALOG-002",
+      "title": "02_商品目录与产品规格图鉴",
+      "pdf_path": "knowledge/raw_pdfs/02_商品目录与产品规格图鉴.pdf",
+      "document_type": "catalog",
+      "visibility": "public",
+      "policy_version": "STORE-2026-V1",
+      "reference_policies": [
+        "CATALOG-KB-2026-v1"
+      ],
+      "ingest": true,
+      "embedding_policy": "page/section-aware with image/table provenance",
+      "source_lang": "zh-CN",
+      "pages": 12,
+      "pdf_size_bytes": 760721,
+      "sha256": "ec9194fd179be05591b22bc555fcfb576c31300b6b36c0751ce038462919ce5a",
+      "pdf_image_occurrences": 72,
+      "text_extractable": true,
+      "allowed_audiences": [
+        "customer",
+        "staff"
+      ]
+    },
+    {
+      "doc_id": "KB-ORDER-003",
+      "title": "03_订单履约与物流配送指南",
+      "pdf_path": "knowledge/raw_pdfs/03_订单履约与物流配送指南.pdf",
+      "document_type": "policy",
+      "visibility": "public",
+      "policy_version": "STORE-2026-V1",
+      "reference_policies": [
+        "SHIP-2026-V1",
+        "ORDER-2026-V1",
+        "CANCEL-2026-V1"
+      ],
+      "ingest": true,
+      "embedding_policy": "page/section-aware with image/table provenance",
+      "source_lang": "zh-CN",
+      "pages": 6,
+      "pdf_size_bytes": 462767,
+      "sha256": "a1592ed9b6687857f2b26c7e3d03e9e71a6c15c1e78542c305332a0686093e35",
+      "pdf_image_occurrences": 12,
+      "text_extractable": true,
+      "allowed_audiences": [
+        "customer",
+        "staff"
+      ]
+    },
+    {
+      "doc_id": "KB-AFTERSALE-004",
+      "title": "04_退换货保修与售后服务手册",
+      "pdf_path": "knowledge/raw_pdfs/04_退换货保修与售后服务手册.pdf",
+      "document_type": "policy",
+      "visibility": "public",
+      "policy_version": "STORE-2026-V1",
+      "reference_policies": [
+        "RETURN-2026-V1",
+        "EXCHANGE-2026-V1",
+        "WARRANTY-2026-V1",
+        "AFTERSALE-2026-V1"
+      ],
+      "ingest": true,
+      "embedding_policy": "page/section-aware with image/table provenance",
+      "source_lang": "zh-CN",
+      "pages": 8,
+      "pdf_size_bytes": 639288,
+      "sha256": "2b9a6b9d41aaf6e32b3470558ffec43758ccc20a1058c1abec23ab3cc9898763",
+      "pdf_image_occurrences": 24,
+      "text_extractable": true,
+      "allowed_audiences": [
+        "customer",
+        "staff"
+      ]
+    },
+    {
+      "doc_id": "KB-TECH-005",
+      "title": "05_设备使用与故障排查手册",
+      "pdf_path": "knowledge/raw_pdfs/05_设备使用与故障排查手册.pdf",
+      "document_type": "manual",
+      "visibility": "public",
+      "policy_version": "STORE-2026-V1",
+      "reference_policies": [
+        "CATALOG-KB-2026-v1",
+        "EXCHANGE-2026-V1"
+      ],
+      "ingest": true,
+      "embedding_policy": "page/section-aware with image/table provenance",
+      "source_lang": "zh-CN",
+      "pages": 7,
+      "pdf_size_bytes": 601862,
+      "sha256": "085a2ee5c36a3cfa14787cdf3bf49b0d8556bc0e1ac9f61d8287da3f964affe0",
+      "pdf_image_occurrences": 49,
+      "text_extractable": true,
+      "allowed_audiences": [
+        "customer",
+        "staff"
+      ]
+    },
+    {
+      "doc_id": "KB-FAQ-006",
+      "title": "06_常见问题与标准客服问答",
+      "pdf_path": "knowledge/raw_pdfs/06_常见问题与标准客服问答.pdf",
+      "document_type": "faq",
+      "visibility": "public",
+      "policy_version": "STORE-2026-V1",
+      "reference_policies": [
+        "STORE-2026-V1"
+      ],
+      "ingest": true,
+      "embedding_policy": "page/section-aware with image/table provenance",
+      "source_lang": "zh-CN",
+      "pages": 8,
+      "pdf_size_bytes": 447301,
+      "sha256": "0c4644602c64f775c9c561e10c83d13e7ad61706443d8dbb1f5c4d6c3367c833",
+      "pdf_image_occurrences": 8,
+      "text_extractable": true,
+      "allowed_audiences": [
+        "customer",
+        "staff"
+      ]
+    },
+    {
+      "doc_id": "KB-SOP-007",
+      "title": "07_客服运营SOP与人工协作规范",
+      "pdf_path": "knowledge/raw_pdfs/07_客服运营SOP与人工协作规范.pdf",
+      "document_type": "sop",
+      "visibility": "internal",
+      "policy_version": "STORE-2026-V1",
+      "reference_policies": [
+        "SERVICE-2026-V1",
+        "PRIVACY-2026-V1",
+        "AFTERSALE-2026-V1"
+      ],
+      "ingest": false,
+      "embedding_policy": "page/section-aware with image/table provenance",
+      "source_lang": "zh-CN",
+      "pages": 6,
+      "pdf_size_bytes": 660757,
+      "sha256": "896f4d2a44ba1ec177eb8a2444b9a31cf186dc537cf07ed4b35cec51b632ca00",
+      "pdf_image_occurrences": 30,
+      "text_extractable": true,
+      "allowed_audiences": [
+        "staff"
+      ]
+    }
+  ],
+  "excluded_sources": [
+    "business/",
+    "eval/",
+    "knowledge/parsed/",
+    "knowledge/cache/",
+    "knowledge/legacy_markdown/"
+  ],
+  "total_pdf_pages": 53,
+  "expected_public_pdf_count": 6,
+  "internal_handling": "SOP文档保留为内部资料，但默认不入面向用户的Milvus Collection。需要内部检索时必须单独建库并校验员工身份。",
+  "manifest_path_base": "所有pdf_path相对于data/，程序应使用Path(__file__).resolve()定位而非依赖当前工作目录。"
+}

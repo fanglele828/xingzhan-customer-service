@@ -1,0 +1,82 @@
+[
+  {
+    "ticket_id": "TKT-8001",
+    "request_id": "seed-8001",
+    "user_id": "U001",
+    "order_id": "ORD-1003",
+    "type": "return_request",
+    "status": "open",
+    "description": "已签收超过普通退货预审期限，用户申请特殊情况人工核验；当前等待客服审核，不表示已批准退款。",
+    "created_at": "2026-11-03T15:00:00+08:00"
+  },
+  {
+    "ticket_id": "TKT-8002",
+    "request_id": "seed-8002",
+    "user_id": "U001",
+    "order_id": "ORD-1006",
+    "type": "shipping_issue",
+    "status": "in_review",
+    "description": "用户反馈刚付款后尚未发货，咨询预计出库时间；已进入人工处理队列，不属于真实物流丢件。",
+    "created_at": "2026-11-03T15:00:00+08:00"
+  },
+  {
+    "ticket_id": "TKT-8003",
+    "request_id": "seed-8003",
+    "user_id": "U001",
+    "order_id": "ORD-1008",
+    "type": "quality_issue",
+    "status": "resolved",
+    "description": "用户反馈耳机单侧无声，已完成故障排查建议并关闭咨询工单；未执行实际退款或换货。",
+    "created_at": "2026-11-03T15:00:00+08:00"
+  },
+  {
+    "ticket_id": "TKT-8004",
+    "request_id": "seed-8004",
+    "user_id": "U002",
+    "order_id": "ORD-1010",
+    "type": "complaint",
+    "status": "open",
+    "description": "客户投诉配送沟通体验欠佳，要求人工说明处理进度；已登记待处理。",
+    "created_at": "2026-11-03T15:00:00+08:00"
+  },
+  {
+    "ticket_id": "TKT-8005",
+    "request_id": "seed-8005",
+    "user_id": "U006",
+    "order_id": "ORD-1013",
+    "type": "return_request",
+    "status": "rejected",
+    "description": "普通无质量问题退货申请已超过模拟商家期限，人工审核后未通过本次普通退货申请；不影响其他合法售后途径。",
+    "created_at": "2026-11-03T15:00:00+08:00"
+  },
+  {
+    "ticket_id": "TKT-8006",
+    "request_id": "seed-8006",
+    "user_id": "U004",
+    "order_id": "ORD-1016",
+    "type": "invoice_request",
+    "status": "in_review",
+    "description": "用户咨询订单发票抬头与开具流程，已转入人工核实；演示系统不生成真实税务发票。",
+    "created_at": "2026-11-03T15:00:00+08:00"
+  },
+  {
+    "ticket_id": "TKT-8007",
+    "request_id": "seed-8007",
+    "user_id": "U003",
+    "order_id": "ORD-1019",
+    "type": "complaint",
+    "status": "open",
+    "description": "用户误以为未收到货属于物流异常，实际订单仍为待支付；工单转为付款与订单状态咨询。",
+    "created_at": "2026-11-03T15:00:00+08:00"
+  },
+  {
+    "ticket_id": "TKT-8008",
+    "request_id": "seed-8008",
+    "user_id": "U006",
+    "order_id": "ORD-1023",
+    "type": "quality_issue",
+    "status": "resolved",
+    "description": "用户反馈配件使用异常，人工提供排查建议后结案；不代表已完成实物更换。",
+    "created_at": "2026-11-03T15:00:00+08:00"
+  }
+]

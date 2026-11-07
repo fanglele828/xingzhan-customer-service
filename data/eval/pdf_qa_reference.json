@@ -1,0 +1,385 @@
+{
+  "policy_version": "STORE-2026-V1",
+  "document_version": "2026-11-04",
+  "cases": [
+    {
+      "id": "KBQ-001",
+      "query": "P001只提供通话降噪，不应当作主动降噪耳机",
+      "expected_doc_id": "KB-CATALOG-002",
+      "expected_section_or_entity": "P001",
+      "reference_answer": "P001的anc=false；与通话降噪不同",
+      "candidate_pages": [
+        3
+      ],
+      "test_type": "knowledge_qa",
+      "purpose": "PDF离线检索评测参考，不可进入RAG知识库",
+      "audience": "customer",
+      "evidence_scope": "reference_only_not_for_ingest"
+    },
+    {
+      "id": "KBQ-002",
+      "query": "P002是否支持主动降噪？",
+      "expected_doc_id": "KB-CATALOG-002",
+      "expected_section_or_entity": "P002",
+      "reference_answer": "支持ANC，适合通勤与办公",
+      "candidate_pages": [
+        3,
+        4
+      ],
+      "test_type": "knowledge_qa",
+      "purpose": "PDF离线检索评测参考，不可进入RAG知识库",
+      "audience": "customer",
+      "evidence_scope": "reference_only_not_for_ingest"
+    },
+    {
+      "id": "KBQ-003",
+      "query": "P003和P002哪个单次续航更久？",
+      "expected_doc_id": "KB-CATALOG-002",
+      "expected_section_or_entity": "P003",
+      "reference_answer": "P003 8小时，P002 7小时",
+      "candidate_pages": [
+        3,
+        4
+      ],
+      "test_type": "knowledge_qa",
+      "purpose": "PDF离线检索评测参考，不可进入RAG知识库",
+      "audience": "customer",
+      "evidence_scope": "reference_only_not_for_ingest"
+    },
+    {
+      "id": "KBQ-004",
+      "query": "P012键盘支持热插拔吗？",
+      "expected_doc_id": "KB-CATALOG-002",
+      "expected_section_or_entity": "P012",
+      "reference_answer": "hot_swap=true",
+      "candidate_pages": [
+        5,
+        6
+      ],
+      "test_type": "knowledge_qa",
+      "purpose": "PDF离线检索评测参考，不可进入RAG知识库",
+      "audience": "customer",
+      "evidence_scope": "reference_only_not_for_ingest"
+    },
+    {
+      "id": "KBQ-005",
+      "query": "P025的最高标称输出是多少瓦？",
+      "expected_doc_id": "KB-CATALOG-002",
+      "expected_section_or_entity": "P025",
+      "reference_answer": "30W",
+      "candidate_pages": [
+        8
+      ],
+      "test_type": "knowledge_qa",
+      "purpose": "PDF离线检索评测参考，不可进入RAG知识库",
+      "audience": "customer",
+      "evidence_scope": "reference_only_not_for_ingest"
+    },
+    {
+      "id": "KBQ-006",
+      "query": "P038 HDMI规格是什么？",
+      "expected_doc_id": "KB-CATALOG-002",
+      "expected_section_or_entity": "P038",
+      "reference_answer": "4K60Hz",
+      "candidate_pages": [
+        11
+      ],
+      "test_type": "knowledge_qa",
+      "purpose": "PDF离线检索评测参考，不可进入RAG知识库",
+      "audience": "customer",
+      "evidence_scope": "reference_only_not_for_ingest"
+    },
+    {
+      "id": "KBQ-007",
+      "query": "用户咨询预算300元以内带ANC的耳机，怎么筛选？",
+      "expected_doc_id": "KB-STORE-001",
+      "expected_section_or_entity": "PRODUCT-02",
+      "reference_answer": "价格与ANC必须由商品数据库字段验证",
+      "candidate_pages": [
+        3
+      ],
+      "test_type": "knowledge_qa",
+      "purpose": "PDF离线检索评测参考，不可进入RAG知识库",
+      "audience": "customer",
+      "evidence_scope": "reference_only_not_for_ingest"
+    },
+    {
+      "id": "KBQ-008",
+      "query": "订单金额和商品当前标价不一致，应该以哪个为准？",
+      "expected_doc_id": "KB-STORE-001",
+      "expected_section_or_entity": "PAY-04",
+      "reference_answer": "以订单明细价格快照为准",
+      "candidate_pages": [
+        5
+      ],
+      "test_type": "knowledge_qa",
+      "purpose": "PDF离线检索评测参考，不可进入RAG知识库",
+      "audience": "customer",
+      "evidence_scope": "reference_only_not_for_ingest"
+    },
+    {
+      "id": "KBQ-009",
+      "query": "演示商家满多少免基础运费？",
+      "expected_doc_id": "KB-ORDER-003",
+      "expected_section_or_entity": "SHIP-03",
+      "reference_answer": "99元及以上免基础运费，不足99元收8元",
+      "candidate_pages": [
+        3
+      ],
+      "test_type": "knowledge_qa",
+      "purpose": "PDF离线检索评测参考，不可进入RAG知识库",
+      "audience": "customer",
+      "evidence_scope": "reference_only_not_for_ingest"
+    },
+    {
+      "id": "KBQ-010",
+      "query": "已付款订单通常多久安排发货？",
+      "expected_doc_id": "KB-ORDER-003",
+      "expected_section_or_entity": "SHIP-01",
+      "reference_answer": "通常1—2个工作日",
+      "candidate_pages": [
+        3
+      ],
+      "test_type": "knowledge_qa",
+      "purpose": "PDF离线检索评测参考，不可进入RAG知识库",
+      "audience": "customer",
+      "evidence_scope": "reference_only_not_for_ingest"
+    },
+    {
+      "id": "KBQ-011",
+      "query": "物流超过多久没有更新可以提交异常工单？",
+      "expected_doc_id": "KB-ORDER-003",
+      "expected_section_or_entity": "SHIP-04",
+      "reference_answer": "已发货未签收且末次物流事件超过72小时",
+      "candidate_pages": [
+        3
+      ],
+      "test_type": "knowledge_qa",
+      "purpose": "PDF离线检索评测参考，不可进入RAG知识库",
+      "audience": "customer",
+      "evidence_scope": "reference_only_not_for_ingest"
+    },
+    {
+      "id": "KBQ-012",
+      "query": "哪个订单状态允许申请自动取消？",
+      "expected_doc_id": "KB-ORDER-003",
+      "expected_section_or_entity": "CANCEL-01",
+      "reference_answer": "只有paid且未出库，仍需本人确认",
+      "candidate_pages": [
+        4
+      ],
+      "test_type": "knowledge_qa",
+      "purpose": "PDF离线检索评测参考，不可进入RAG知识库",
+      "audience": "customer",
+      "evidence_scope": "reference_only_not_for_ingest"
+    },
+    {
+      "id": "KBQ-013",
+      "query": "普通退货从签收后第几天截止自动预审？",
+      "expected_doc_id": "KB-AFTERSALE-004",
+      "expected_section_or_entity": "RETURN-01",
+      "reference_answer": "签收第0天，至第7自然日仍可申请",
+      "candidate_pages": [
+        2,
+        8
+      ],
+      "test_type": "knowledge_qa",
+      "purpose": "PDF离线检索评测参考，不可进入RAG知识库",
+      "audience": "customer",
+      "evidence_scope": "reference_only_not_for_ingest"
+    },
+    {
+      "id": "KBQ-014",
+      "query": "拆封的蓝牙耳机可以自动通过普通无质量问题退货吗？",
+      "expected_doc_id": "KB-AFTERSALE-004",
+      "expected_section_or_entity": "RETURN-03",
+      "reference_answer": "不能自动通过，转人工",
+      "candidate_pages": [
+        2
+      ],
+      "test_type": "knowledge_qa",
+      "purpose": "PDF离线检索评测参考，不可进入RAG知识库",
+      "audience": "customer",
+      "evidence_scope": "reference_only_not_for_ingest"
+    },
+    {
+      "id": "KBQ-015",
+      "query": "出现质量问题但是超过7天应如何处理？",
+      "expected_doc_id": "KB-AFTERSALE-004",
+      "expected_section_or_entity": "RETURN-04",
+      "reference_answer": "质量售后转人工，不直接套用普通期限拒绝",
+      "candidate_pages": [
+        2
+      ],
+      "test_type": "knowledge_qa",
+      "purpose": "PDF离线检索评测参考，不可进入RAG知识库",
+      "audience": "customer",
+      "evidence_scope": "reference_only_not_for_ingest"
+    },
+    {
+      "id": "KBQ-016",
+      "query": "同一订单有两件商品，如何发起部分退货？",
+      "expected_doc_id": "KB-AFTERSALE-004",
+      "expected_section_or_entity": "RETURN-08",
+      "reference_answer": "必须明确product_id并核验对应商品状态",
+      "candidate_pages": [
+        3
+      ],
+      "test_type": "knowledge_qa",
+      "purpose": "PDF离线检索评测参考，不可进入RAG知识库",
+      "audience": "customer",
+      "evidence_scope": "reference_only_not_for_ingest"
+    },
+    {
+      "id": "KBQ-017",
+      "query": "客户已经获得预审通过，是否代表退款到账？",
+      "expected_doc_id": "KB-AFTERSALE-004",
+      "expected_section_or_entity": "RETURN-10",
+      "reference_answer": "不代表；只可提交工单",
+      "candidate_pages": [
+        3
+      ],
+      "test_type": "knowledge_qa",
+      "purpose": "PDF离线检索评测参考，不可进入RAG知识库",
+      "audience": "customer",
+      "evidence_scope": "reference_only_not_for_ingest"
+    },
+    {
+      "id": "KBQ-018",
+      "query": "查询工单显示in_review代表什么？",
+      "expected_doc_id": "KB-AFTERSALE-004",
+      "expected_section_or_entity": "AS-06",
+      "reference_answer": "人工处理中，非退款成功",
+      "candidate_pages": [
+        6
+      ],
+      "test_type": "knowledge_qa",
+      "purpose": "PDF离线检索评测参考，不可进入RAG知识库",
+      "audience": "customer",
+      "evidence_scope": "reference_only_not_for_ingest"
+    },
+    {
+      "id": "KBQ-019",
+      "query": "耳机通话降噪和主动降噪有什么区别？",
+      "expected_doc_id": "KB-TECH-005",
+      "expected_section_or_entity": "1.1",
+      "reference_answer": "ANC降低佩戴者听到的环境噪声，通话降噪针对麦克风",
+      "candidate_pages": [
+        3
+      ],
+      "test_type": "knowledge_or_image",
+      "purpose": "PDF离线检索评测参考，不可进入RAG知识库",
+      "audience": "customer",
+      "evidence_scope": "reference_only_not_for_ingest"
+    },
+    {
+      "id": "KBQ-020",
+      "query": "扩展坞带HDMI口是不是一定能连接任何电脑？",
+      "expected_doc_id": "KB-TECH-005",
+      "expected_section_or_entity": "05",
+      "reference_answer": "需要主机支持视频输出、带宽和接口协议",
+      "candidate_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "test_type": "knowledge_or_image",
+      "purpose": "PDF离线检索评测参考，不可进入RAG知识库",
+      "audience": "customer",
+      "evidence_scope": "reference_only_not_for_ingest"
+    },
+    {
+      "id": "KBQ-021",
+      "query": "如何排查蓝牙耳机第一次配对失败？",
+      "expected_doc_id": "KB-TECH-005",
+      "expected_section_or_entity": "图 1-2",
+      "reference_answer": "检查电量、配对模式、设备搜索与重连",
+      "candidate_pages": [
+        3
+      ],
+      "test_type": "knowledge_or_image",
+      "purpose": "PDF离线检索评测参考，不可进入RAG知识库",
+      "audience": "customer",
+      "evidence_scope": "reference_only_not_for_ingest"
+    },
+    {
+      "id": "KBQ-022",
+      "query": "便携充电器多口使用时是否能都输出最高功率？",
+      "expected_doc_id": "KB-TECH-005",
+      "expected_section_or_entity": "04",
+      "reference_answer": "须检查多口功率分配，不做保证",
+      "candidate_pages": [
+        1,
+        2,
+        5
+      ],
+      "test_type": "knowledge_or_image",
+      "purpose": "PDF离线检索评测参考，不可进入RAG知识库",
+      "audience": "customer",
+      "evidence_scope": "reference_only_not_for_ingest"
+    },
+    {
+      "id": "KBQ-023",
+      "query": "用户只提供订单号就能查询吗？",
+      "expected_doc_id": "KB-FAQ-006",
+      "expected_section_or_entity": "Q32",
+      "reference_answer": "不能，必须使用服务端身份校验",
+      "candidate_pages": [
+        5
+      ],
+      "test_type": "knowledge_or_image",
+      "purpose": "PDF离线检索评测参考，不可进入RAG知识库",
+      "audience": "customer",
+      "evidence_scope": "reference_only_not_for_ingest"
+    },
+    {
+      "id": "KBQ-024",
+      "query": "用户明确要求人工客服时应怎么办？",
+      "expected_doc_id": "KB-FAQ-006",
+      "expected_section_or_entity": "Q27",
+      "reference_answer": "提供工单与人工接入入口",
+      "candidate_pages": [
+        5
+      ],
+      "test_type": "knowledge_or_image",
+      "purpose": "PDF离线检索评测参考，不可进入RAG知识库",
+      "audience": "customer",
+      "evidence_scope": "reference_only_not_for_ingest"
+    },
+    {
+      "id": "KBQ-025",
+      "query": "确认之前允许创建工单吗？",
+      "expected_doc_id": "KB-FAQ-006",
+      "expected_section_or_entity": "Q24",
+      "reference_answer": "不允许，必须明确确认与后端核验",
+      "candidate_pages": [
+        4
+      ],
+      "test_type": "knowledge_or_image",
+      "purpose": "PDF离线检索评测参考，不可进入RAG知识库",
+      "audience": "customer",
+      "evidence_scope": "reference_only_not_for_ingest"
+    },
+    {
+      "id": "KBQ-026",
+      "query": "如何保证同一request_id不产生重复工单？",
+      "expected_doc_id": "KB-SOP-007",
+      "expected_section_or_entity": "04",
+      "reference_answer": "数据库唯一约束和幂等处理",
+      "candidate_pages": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "test_type": "knowledge_or_image",
+      "purpose": "PDF离线检索评测参考，不可进入RAG知识库",
+      "audience": "staff",
+      "evidence_scope": "reference_only_not_for_ingest"
+    }
+  ]
+}

@@ -1,0 +1,617 @@
+[
+  {
+    "order_id": "ORD-1001",
+    "user_id": "U001",
+    "status": "delivered",
+    "placed_at": "2026-10-27T10:30:00+08:00",
+    "shipped_at": "2026-10-28T09:00:00+08:00",
+    "delivered_at": "2026-10-30T13:00:00+08:00",
+    "package_state": "opened",
+    "item_condition": "normal",
+    "issue_type": "no_reason",
+    "items": [
+      {
+        "product_id": "P002",
+        "quantity": 1,
+        "unit_price_snapshot_cny": 269.0
+      }
+    ],
+    "amount_cny": 269.0,
+    "data_mode": "fixture"
+  },
+  {
+    "order_id": "ORD-1002",
+    "user_id": "U001",
+    "status": "delivered",
+    "placed_at": "2026-10-28T10:30:00+08:00",
+    "shipped_at": "2026-10-30T09:00:00+08:00",
+    "delivered_at": "2026-11-01T13:00:00+08:00",
+    "package_state": "sealed",
+    "item_condition": "normal",
+    "issue_type": "no_reason",
+    "items": [
+      {
+        "product_id": "P003",
+        "quantity": 1,
+        "unit_price_snapshot_cny": 299.0
+      }
+    ],
+    "amount_cny": 299.0,
+    "data_mode": "fixture"
+  },
+  {
+    "order_id": "ORD-1003",
+    "user_id": "U001",
+    "status": "delivered",
+    "placed_at": "2026-10-12T10:30:00+08:00",
+    "shipped_at": "2026-10-18T09:00:00+08:00",
+    "delivered_at": "2026-10-20T13:00:00+08:00",
+    "package_state": "sealed",
+    "item_condition": "normal",
+    "issue_type": "no_reason",
+    "items": [
+      {
+        "product_id": "P001",
+        "quantity": 1,
+        "unit_price_snapshot_cny": 169.0
+      }
+    ],
+    "amount_cny": 169.0,
+    "data_mode": "fixture"
+  },
+  {
+    "order_id": "ORD-1004",
+    "user_id": "U001",
+    "status": "delivered",
+    "placed_at": "2026-10-27T10:30:00+08:00",
+    "shipped_at": "2026-10-29T09:00:00+08:00",
+    "delivered_at": "2026-10-31T13:00:00+08:00",
+    "package_state": "opened",
+    "item_condition": "normal",
+    "issue_type": "no_reason",
+    "items": [
+      {
+        "product_id": "P018",
+        "quantity": 1,
+        "unit_price_snapshot_cny": 69.0
+      }
+    ],
+    "amount_cny": 77.0,
+    "data_mode": "fixture"
+  },
+  {
+    "order_id": "ORD-1005",
+    "user_id": "U001",
+    "status": "shipped",
+    "placed_at": "2026-11-01T10:30:00+08:00",
+    "shipped_at": "2026-11-02T09:00:00+08:00",
+    "delivered_at": null,
+    "package_state": "sealed",
+    "item_condition": "normal",
+    "issue_type": "no_reason",
+    "items": [
+      {
+        "product_id": "P027",
+        "quantity": 1,
+        "unit_price_snapshot_cny": 109.0
+      }
+    ],
+    "amount_cny": 109.0,
+    "data_mode": "fixture"
+  },
+  {
+    "order_id": "ORD-1006",
+    "user_id": "U001",
+    "status": "paid",
+    "placed_at": "2026-11-03T10:30:00+08:00",
+    "shipped_at": null,
+    "delivered_at": null,
+    "package_state": "sealed",
+    "item_condition": "normal",
+    "issue_type": "no_reason",
+    "items": [
+      {
+        "product_id": "P011",
+        "quantity": 1,
+        "unit_price_snapshot_cny": 159.0
+      }
+    ],
+    "amount_cny": 159.0,
+    "data_mode": "fixture"
+  },
+  {
+    "order_id": "ORD-1007",
+    "user_id": "U001",
+    "status": "shipped",
+    "placed_at": "2026-10-29T10:30:00+08:00",
+    "shipped_at": "2026-10-30T09:00:00+08:00",
+    "delivered_at": null,
+    "package_state": "sealed",
+    "item_condition": "normal",
+    "issue_type": "no_reason",
+    "items": [
+      {
+        "product_id": "P021",
+        "quantity": 1,
+        "unit_price_snapshot_cny": 229.0
+      }
+    ],
+    "amount_cny": 229.0,
+    "data_mode": "fixture"
+  },
+  {
+    "order_id": "ORD-1008",
+    "user_id": "U001",
+    "status": "delivered",
+    "placed_at": "2026-10-29T10:30:00+08:00",
+    "shipped_at": "2026-10-31T09:00:00+08:00",
+    "delivered_at": "2026-11-02T13:00:00+08:00",
+    "package_state": "opened",
+    "item_condition": "defective",
+    "issue_type": "defective",
+    "items": [
+      {
+        "product_id": "P004",
+        "quantity": 1,
+        "unit_price_snapshot_cny": 399.0
+      }
+    ],
+    "amount_cny": 399.0,
+    "data_mode": "fixture"
+  },
+  {
+    "order_id": "ORD-1009",
+    "user_id": "U002",
+    "status": "delivered",
+    "placed_at": "2026-10-27T10:30:00+08:00",
+    "shipped_at": "2026-10-29T09:00:00+08:00",
+    "delivered_at": "2026-10-31T13:00:00+08:00",
+    "package_state": "sealed",
+    "item_condition": "normal",
+    "issue_type": "no_reason",
+    "items": [
+      {
+        "product_id": "P002",
+        "quantity": 1,
+        "unit_price_snapshot_cny": 269.0
+      },
+      {
+        "product_id": "P028",
+        "quantity": 1,
+        "unit_price_snapshot_cny": 49.0
+      }
+    ],
+    "amount_cny": 318.0,
+    "data_mode": "fixture"
+  },
+  {
+    "order_id": "ORD-1010",
+    "user_id": "U002",
+    "status": "delivered",
+    "placed_at": "2026-10-22T10:30:00+08:00",
+    "shipped_at": "2026-10-25T09:00:00+08:00",
+    "delivered_at": "2026-10-27T13:00:00+08:00",
+    "package_state": "sealed",
+    "item_condition": "normal",
+    "issue_type": "no_reason",
+    "items": [
+      {
+        "product_id": "P024",
+        "quantity": 1,
+        "unit_price_snapshot_cny": 259.0
+      }
+    ],
+    "amount_cny": 259.0,
+    "data_mode": "fixture"
+  },
+  {
+    "order_id": "ORD-1011",
+    "user_id": "U003",
+    "status": "cancelled",
+    "placed_at": "2026-11-01T10:30:00+08:00",
+    "shipped_at": null,
+    "delivered_at": null,
+    "package_state": "sealed",
+    "item_condition": "normal",
+    "issue_type": "no_reason",
+    "items": [
+      {
+        "product_id": "P005",
+        "quantity": 1,
+        "unit_price_snapshot_cny": 129.0
+      }
+    ],
+    "amount_cny": 129.0,
+    "data_mode": "fixture"
+  },
+  {
+    "order_id": "ORD-1012",
+    "user_id": "U003",
+    "status": "refunded",
+    "placed_at": "2026-10-21T10:30:00+08:00",
+    "shipped_at": "2026-10-23T09:00:00+08:00",
+    "delivered_at": "2026-10-25T13:00:00+08:00",
+    "package_state": "sealed",
+    "item_condition": "normal",
+    "issue_type": "no_reason",
+    "items": [
+      {
+        "product_id": "P017",
+        "quantity": 1,
+        "unit_price_snapshot_cny": 379.0
+      }
+    ],
+    "amount_cny": 379.0,
+    "data_mode": "fixture"
+  },
+  {
+    "order_id": "ORD-1013",
+    "user_id": "U006",
+    "status": "delivered",
+    "placed_at": "2026-10-23T10:30:00+08:00",
+    "shipped_at": "2026-10-24T09:00:00+08:00",
+    "delivered_at": "2026-10-26T13:00:00+08:00",
+    "package_state": "opened",
+    "item_condition": "normal",
+    "issue_type": "no_reason",
+    "items": [
+      {
+        "product_id": "P014",
+        "quantity": 1,
+        "unit_price_snapshot_cny": 349.0
+      }
+    ],
+    "amount_cny": 349.0,
+    "data_mode": "fixture"
+  },
+  {
+    "order_id": "ORD-1014",
+    "user_id": "U004",
+    "status": "delivered",
+    "placed_at": "2026-11-02T10:30:00+08:00",
+    "shipped_at": "2026-11-03T09:00:00+08:00",
+    "delivered_at": "2026-11-04T13:00:00+08:00",
+    "package_state": "sealed",
+    "item_condition": "normal",
+    "issue_type": "no_reason",
+    "items": [
+      {
+        "product_id": "P038",
+        "quantity": 1,
+        "unit_price_snapshot_cny": 279.0
+      }
+    ],
+    "amount_cny": 279.0,
+    "data_mode": "fixture"
+  },
+  {
+    "order_id": "ORD-1015",
+    "user_id": "U004",
+    "status": "delivered",
+    "placed_at": "2026-10-13T10:30:00+08:00",
+    "shipped_at": "2026-10-14T09:00:00+08:00",
+    "delivered_at": "2026-10-16T13:00:00+08:00",
+    "package_state": "sealed",
+    "item_condition": "normal",
+    "issue_type": "no_reason",
+    "items": [
+      {
+        "product_id": "P001",
+        "quantity": 1,
+        "unit_price_snapshot_cny": 169.0
+      }
+    ],
+    "amount_cny": 169.0,
+    "data_mode": "fixture"
+  },
+  {
+    "order_id": "ORD-1016",
+    "user_id": "U004",
+    "status": "delivered",
+    "placed_at": "2026-11-02T10:30:00+08:00",
+    "shipped_at": "2026-11-03T09:00:00+08:00",
+    "delivered_at": "2026-11-04T13:00:00+08:00",
+    "package_state": "opened",
+    "item_condition": "normal",
+    "issue_type": "no_reason",
+    "items": [
+      {
+        "product_id": "P025",
+        "quantity": 1,
+        "unit_price_snapshot_cny": 79.0
+      }
+    ],
+    "amount_cny": 87.0,
+    "data_mode": "fixture"
+  },
+  {
+    "order_id": "ORD-1017",
+    "user_id": "U006",
+    "status": "shipped",
+    "placed_at": "2026-10-16T10:30:00+08:00",
+    "shipped_at": "2026-10-17T09:00:00+08:00",
+    "delivered_at": null,
+    "package_state": "sealed",
+    "item_condition": "normal",
+    "issue_type": "no_reason",
+    "items": [
+      {
+        "product_id": "P011",
+        "quantity": 1,
+        "unit_price_snapshot_cny": 159.0
+      }
+    ],
+    "amount_cny": 159.0,
+    "data_mode": "fixture"
+  },
+  {
+    "order_id": "ORD-1018",
+    "user_id": "U006",
+    "status": "paid",
+    "placed_at": "2026-10-07T10:30:00+08:00",
+    "shipped_at": null,
+    "delivered_at": null,
+    "package_state": "sealed",
+    "item_condition": "normal",
+    "issue_type": "no_reason",
+    "items": [
+      {
+        "product_id": "P016",
+        "quantity": 1,
+        "unit_price_snapshot_cny": 139.0
+      }
+    ],
+    "amount_cny": 139.0,
+    "data_mode": "fixture"
+  },
+  {
+    "order_id": "ORD-1019",
+    "user_id": "U003",
+    "status": "pending_payment",
+    "placed_at": "2026-10-27T10:30:00+08:00",
+    "shipped_at": null,
+    "delivered_at": null,
+    "package_state": "sealed",
+    "item_condition": "normal",
+    "issue_type": "no_reason",
+    "items": [
+      {
+        "product_id": "P019",
+        "quantity": 1,
+        "unit_price_snapshot_cny": 129.0
+      }
+    ],
+    "amount_cny": 129.0,
+    "data_mode": "fixture"
+  },
+  {
+    "order_id": "ORD-1020",
+    "user_id": "U006",
+    "status": "cancelled",
+    "placed_at": "2026-10-16T10:30:00+08:00",
+    "shipped_at": null,
+    "delivered_at": null,
+    "package_state": "sealed",
+    "item_condition": "normal",
+    "issue_type": "no_reason",
+    "items": [
+      {
+        "product_id": "P021",
+        "quantity": 1,
+        "unit_price_snapshot_cny": 229.0
+      }
+    ],
+    "amount_cny": 229.0,
+    "data_mode": "fixture"
+  },
+  {
+    "order_id": "ORD-1021",
+    "user_id": "U005",
+    "status": "refunded",
+    "placed_at": "2026-10-21T10:30:00+08:00",
+    "shipped_at": "2026-10-22T09:00:00+08:00",
+    "delivered_at": "2026-10-24T13:00:00+08:00",
+    "package_state": "opened",
+    "item_condition": "normal",
+    "issue_type": "no_reason",
+    "items": [
+      {
+        "product_id": "P032",
+        "quantity": 1,
+        "unit_price_snapshot_cny": 189.0
+      }
+    ],
+    "amount_cny": 189.0,
+    "data_mode": "fixture"
+  },
+  {
+    "order_id": "ORD-1022",
+    "user_id": "U003",
+    "status": "delivered",
+    "placed_at": "2026-10-10T10:30:00+08:00",
+    "shipped_at": "2026-10-11T09:00:00+08:00",
+    "delivered_at": "2026-10-13T13:00:00+08:00",
+    "package_state": "opened",
+    "item_condition": "normal",
+    "issue_type": "no_reason",
+    "items": [
+      {
+        "product_id": "P012",
+        "quantity": 1,
+        "unit_price_snapshot_cny": 299.0
+      }
+    ],
+    "amount_cny": 299.0,
+    "data_mode": "fixture"
+  },
+  {
+    "order_id": "ORD-1023",
+    "user_id": "U006",
+    "status": "delivered",
+    "placed_at": "2026-10-29T10:30:00+08:00",
+    "shipped_at": "2026-10-30T09:00:00+08:00",
+    "delivered_at": "2026-11-01T13:00:00+08:00",
+    "package_state": "sealed",
+    "item_condition": "normal",
+    "issue_type": "no_reason",
+    "items": [
+      {
+        "product_id": "P014",
+        "quantity": 1,
+        "unit_price_snapshot_cny": 349.0
+      }
+    ],
+    "amount_cny": 349.0,
+    "data_mode": "fixture"
+  },
+  {
+    "order_id": "ORD-1024",
+    "user_id": "U006",
+    "status": "delivered",
+    "placed_at": "2026-10-16T10:30:00+08:00",
+    "shipped_at": "2026-10-17T09:00:00+08:00",
+    "delivered_at": "2026-10-19T13:00:00+08:00",
+    "package_state": "opened",
+    "item_condition": "normal",
+    "issue_type": "no_reason",
+    "items": [
+      {
+        "product_id": "P003",
+        "quantity": 1,
+        "unit_price_snapshot_cny": 299.0
+      },
+      {
+        "product_id": "P023",
+        "quantity": 1,
+        "unit_price_snapshot_cny": 89.0
+      }
+    ],
+    "amount_cny": 388.0,
+    "data_mode": "fixture"
+  },
+  {
+    "order_id": "ORD-1025",
+    "user_id": "U006",
+    "status": "delivered",
+    "placed_at": "2026-10-17T10:30:00+08:00",
+    "shipped_at": "2026-10-18T09:00:00+08:00",
+    "delivered_at": "2026-10-20T13:00:00+08:00",
+    "package_state": "sealed",
+    "item_condition": "normal",
+    "issue_type": "no_reason",
+    "items": [
+      {
+        "product_id": "P032",
+        "quantity": 1,
+        "unit_price_snapshot_cny": 189.0
+      }
+    ],
+    "amount_cny": 189.0,
+    "data_mode": "fixture"
+  },
+  {
+    "order_id": "ORD-1026",
+    "user_id": "U005",
+    "status": "shipped",
+    "placed_at": "2026-10-18T10:30:00+08:00",
+    "shipped_at": "2026-10-19T09:00:00+08:00",
+    "delivered_at": null,
+    "package_state": "sealed",
+    "item_condition": "normal",
+    "issue_type": "no_reason",
+    "items": [
+      {
+        "product_id": "P023",
+        "quantity": 1,
+        "unit_price_snapshot_cny": 89.0
+      }
+    ],
+    "amount_cny": 97.0,
+    "data_mode": "fixture"
+  },
+  {
+    "order_id": "ORD-1027",
+    "user_id": "U004",
+    "status": "paid",
+    "placed_at": "2026-10-26T10:30:00+08:00",
+    "shipped_at": null,
+    "delivered_at": null,
+    "package_state": "sealed",
+    "item_condition": "normal",
+    "issue_type": "no_reason",
+    "items": [
+      {
+        "product_id": "P013",
+        "quantity": 1,
+        "unit_price_snapshot_cny": 219.0
+      },
+      {
+        "product_id": "P036",
+        "quantity": 1,
+        "unit_price_snapshot_cny": 69.0
+      }
+    ],
+    "amount_cny": 288.0,
+    "data_mode": "fixture"
+  },
+  {
+    "order_id": "ORD-1028",
+    "user_id": "U005",
+    "status": "pending_payment",
+    "placed_at": "2026-10-16T10:30:00+08:00",
+    "shipped_at": null,
+    "delivered_at": null,
+    "package_state": "sealed",
+    "item_condition": "normal",
+    "issue_type": "no_reason",
+    "items": [
+      {
+        "product_id": "P030",
+        "quantity": 1,
+        "unit_price_snapshot_cny": 199.0
+      }
+    ],
+    "amount_cny": 199.0,
+    "data_mode": "fixture"
+  },
+  {
+    "order_id": "ORD-1029",
+    "user_id": "U005",
+    "status": "cancelled",
+    "placed_at": "2026-10-09T10:30:00+08:00",
+    "shipped_at": null,
+    "delivered_at": null,
+    "package_state": "sealed",
+    "item_condition": "normal",
+    "issue_type": "no_reason",
+    "items": [
+      {
+        "product_id": "P020",
+        "quantity": 1,
+        "unit_price_snapshot_cny": 169.0
+      }
+    ],
+    "amount_cny": 169.0,
+    "data_mode": "fixture"
+  },
+  {
+    "order_id": "ORD-1030",
+    "user_id": "U006",
+    "status": "refunded",
+    "placed_at": "2026-10-30T10:30:00+08:00",
+    "shipped_at": "2026-10-31T09:00:00+08:00",
+    "delivered_at": "2026-11-02T13:00:00+08:00",
+    "package_state": "sealed",
+    "item_condition": "normal",
+    "issue_type": "no_reason",
+    "items": [
+      {
+        "product_id": "P003",
+        "quantity": 1,
+        "unit_price_snapshot_cny": 299.0
+      }
+    ],
+    "amount_cny": 299.0,
+    "data_mode": "fixture"
+  }
+]

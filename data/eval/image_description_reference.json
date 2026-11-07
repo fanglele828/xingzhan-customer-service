@@ -1,0 +1,80 @@
+{
+  "usage": "多模态解析质量核对用，不是在线检索知识；不得将其直接作为Qwen3-VL实际输出",
+  "assets": [
+    {
+      "filename": "flow_customer_journey.png",
+      "reference_description": "五阶段客服服务链：售前商品查询、售中订单物流、售后证据预审、用户授权确认以及工单跟踪；商品与订单信息来源不同。",
+      "asset_type": "original_vector_diagram"
+    },
+    {
+      "filename": "flow_shipping.png",
+      "reference_description": "订单履约状态顺序图：pending_payment到paid、shipped、delivered；仅paid未出库可以提出本演示自动取消申请。",
+      "asset_type": "original_vector_diagram"
+    },
+    {
+      "filename": "flow_rag_ingest.png",
+      "reference_description": "PDF处理工作流：原始PDF获取正文表格图片，经解析恢复章节页码，按条款切分后构建Dense/BM25索引，检索时返回引用。",
+      "asset_type": "original_vector_diagram"
+    },
+    {
+      "filename": "flow_ticket.png",
+      "reference_description": "工单从问题收集、资格预审、用户确认、request_id幂等提交到状态查询的全流程。",
+      "asset_type": "original_vector_diagram"
+    },
+    {
+      "filename": "flow_faq.png",
+      "reference_description": "客服从确认问题到知识定位、数据库查事实、带出处回答与异常转人工的处理路径。",
+      "asset_type": "original_vector_diagram"
+    },
+    {
+      "filename": "flow_bluetooth.png",
+      "reference_description": "蓝牙耳机初次连接的五步流程：检查电量、配对模式、手机搜索、确认连接、连接失败排查。",
+      "asset_type": "original_vector_diagram"
+    },
+    {
+      "filename": "flow_identity.png",
+      "reference_description": "个人订单的五步服务端权限检查：可信用户会话、订单归属验证、状态校验、草稿准备、确认后再次校验。",
+      "asset_type": "original_vector_diagram"
+    },
+    {
+      "filename": "flow_return_decision.png",
+      "reference_description": "普通退货资格预审的分支决策树：验证用户归属、已签收、七天期限、商品和包装状态、有效政策证据，失败进入拒绝访问/订单物流/人工核验路径。",
+      "asset_type": "original_vector_diagram"
+    },
+    {
+      "filename": "evidence_matrix.png",
+      "reference_description": "退货预审证据矩阵：身份归属、退货时限、商品状态、质量问题、重复提交五类核验项对应的政策来源、订单事实与自动处理原则。",
+      "asset_type": "original_vector_diagram"
+    },
+    {
+      "filename": "product_headphone.png",
+      "reference_description": "浅色背景上深蓝色头戴式蓝牙耳机的结构示意，包含拱形头梁、两侧耳罩和耳垫，示意图不对应特定SKU的正式外观。",
+      "asset_type": "original_vector_diagram"
+    },
+    {
+      "filename": "product_keyboard.png",
+      "reference_description": "68到87键机械键盘的一般按键排列示意，包含键帽阵列、右侧按键区和底部空格键区域，非实拍产品。",
+      "asset_type": "original_vector_diagram"
+    },
+    {
+      "filename": "product_mouse.png",
+      "reference_description": "无线鼠标一般外观：左右主按键、滚轮、流线型外壳、分界线，非特定型号。",
+      "asset_type": "original_vector_diagram"
+    },
+    {
+      "filename": "product_charger.png",
+      "reference_description": "USB充电器外形示意，两组并列充电端口，适合让视觉模型识别端口数量与位置而不推断具体功率。",
+      "asset_type": "original_vector_diagram"
+    },
+    {
+      "filename": "product_powerbank.png",
+      "reference_description": "移动电源正面概念图，显示剩余电量数字与接口区域，不代表真实充放电性能。",
+      "asset_type": "original_vector_diagram"
+    },
+    {
+      "filename": "product_dock.png",
+      "reference_description": "USB-C扩展坞常见外观，长条主体上排列多个输出接口与连接线；仅用于接口位置说明。",
+      "asset_type": "original_vector_diagram"
+    }
+  ]
+}

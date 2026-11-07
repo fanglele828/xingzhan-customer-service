@@ -1,0 +1,32 @@
+[
+  {
+    "user_id": "U001",
+    "display_name": "演示用户1",
+    "verified": true
+  },
+  {
+    "user_id": "U002",
+    "display_name": "演示用户2",
+    "verified": true
+  },
+  {
+    "user_id": "U003",
+    "display_name": "演示用户3",
+    "verified": true
+  },
+  {
+    "user_id": "U004",
+    "display_name": "演示用户4",
+    "verified": true
+  },
+  {
+    "user_id": "U005",
+    "display_name": "演示用户5",
+    "verified": true
+  },
+  {
+    "user_id": "U006",
+    "display_name": "演示用户6",
+    "verified": true
+  }
+]

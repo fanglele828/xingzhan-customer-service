@@ -1,0 +1,17 @@
+.env
+.env.*
+!.env.example
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+node_modules/
+dist/
+*.sqlite3
+*.sqlite3-*
+*.building
+docs/PROJECT_SPEC.md
+docs/lessons/
+_tmp_*.py
+data/knowledge/parsed_cache/
+/release/
