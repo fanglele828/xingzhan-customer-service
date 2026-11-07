@@ -140,6 +140,5 @@ python start.py
 ├── docs/
 │   ├── ARCHITECTURE.md            # 模块职责、接口与售后时序
 │   └── media/                     # 多轮演示截图
-├── ablation_rag.py                 # 2×2 检索消融复现
 └── start.py                        # 本地启动入口
 ```
